@@ -16,7 +16,11 @@ Application locale d'analyse de relevés BNP Paribas : import de PDF texte, cat�
 Prérequis : Docker Desktop ou Docker Engine + Docker Compose.
 
 ```bash
+git clone https://github.com/VenanceElegba/finance-intelligence.git
+cd finance-intelligence
 mkdir -p data/input data/exports
+mkdir -p data/input/BNPCourant
+mkdir -p data/input/BNPLivret
 # Placez les relevés PDF texte dans data/input (facultatif : import via l'interface)
 docker compose up --build -d
 ```
