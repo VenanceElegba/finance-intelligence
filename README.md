@@ -1,4 +1,4 @@
-# BNP Finance Intelligence
+# Finance Intelligence
 
 Application locale d'analyse de relevés BNP Paribas : import de PDF texte, catégorisation explicable par règles, détection de récurrences/anomalies, tableau de bord, simulations et exports.
 
