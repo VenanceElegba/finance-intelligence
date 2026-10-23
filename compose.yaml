@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    container_name: bnp-finance-intelligence
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      FINANCE_DB_PATH: /data/finance.sqlite3
+      PYTHONHASHSEED: "0"
+    volumes:
+      - ./data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL

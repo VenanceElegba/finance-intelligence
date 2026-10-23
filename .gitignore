@@ -1,0 +1,33 @@
+# Environnement Python
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+data/*
+!data/.gitkeep
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+
+# Données bancaires privées
+data/*
+!data/.gitkeep
+
+# Relevés et documents financiers
+*.pdf
+*.sqlite
+*.sqlite3
+*.db
+*.csv
+*.xlsx
+*.xls
+*.ofx
+*.qif
+
+# IDE et système
+.vscode/
+.idea/
+.DS_Store
